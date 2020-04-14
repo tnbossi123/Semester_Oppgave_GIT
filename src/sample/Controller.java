@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 import java.awt.event.ActionEvent;
 
 public class Controller {
-
+    
     @FXML
     private TextField brukernavnID;
 
