@@ -1,7 +1,7 @@
 package sample;
 
 public class Person {
-
+    //Blerton
 
     String navn;
     String alder;
