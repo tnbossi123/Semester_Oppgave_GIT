@@ -5,12 +5,12 @@ public class Person {
 
     String navn;
     String alder;
-    String kjønn; //ny attribrut
+    String kjonn; //ny attribrut hahaha
 //SPACE
-    public Person(String navn, String alder, String kjønn){
+    public Person(String navn, String alder, String kjonn){
         this.navn = navn;
         this.alder = alder;
-        this.kjønn = kjønn;
+        this.kjonn = kjonn;
     }
 
 }
