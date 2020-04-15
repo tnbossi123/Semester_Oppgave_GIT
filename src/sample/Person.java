@@ -14,6 +14,7 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    //Getters
     public String getName() {
         return name;
     }
@@ -43,6 +44,7 @@ class Customer extends Person{
 
     }
 
+    //Getter
     public int getCustomerId() {
         return customerId;
     }
@@ -60,6 +62,7 @@ class Admin extends Person {
 
     }
 
+    //Getter
     public int getAdminId() {
         return adminId;
     }
