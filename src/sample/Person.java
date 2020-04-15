@@ -3,11 +3,11 @@ package sample;
 // Person
 public class Person {
     String name;
-    Dato age;
+    Dato birthday;
     String email;
     String phoneNumber;
 
-    public Person(String name, Dato age, String email, String phoneNumber){
+    public Person(String name, Dato birthday, String email, String phoneNumber){
         this.name = name;
         this.alder = alder;
         this.email = email;
@@ -22,12 +22,12 @@ public class Person {
         this.name = name;
     }
 
-    public Dato getAge() {
-        return age;
+    public Dato getBirthday() {
+        return birthday;
     }
 
-    public void setAge(Dato age) {
-        this.age = age;
+    public void setBirthday(Dato birthday) {
+        this.birthday = birthday;
     }
 
     public String getEmail() {
@@ -51,21 +51,21 @@ public class Person {
 //Customer
 class Customer extends Person{
 
-    int kundeId;
+    int customerId;
 
-    public Customer(String name, Dato age, String email, String phoneNumber, int kundeId){
+    public Customer(String name, Dato birthday, String email, String phoneNumber, int customerId){
 
-        super(name, age, email, phoneNumber);
-        this.kundeId = kundeId;
+        super(name, birthday, email, phoneNumber);
+        this.customerId = customerId;
 
     }
 
-    public int getKundeId() {
-        return kundeId;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setKundeId(int kundeId) {
-        this.kundeId = kundeId;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
 }
@@ -75,14 +75,46 @@ class Admin extends Person {
 
     int adminId;
 
-    public Admin(String name, Dato age, String email, String phoneNumber, int adminId){
+    public Admin(String name, Dato birthday, String email, String phoneNumber, int adminId){
 
-        super(name, age, email, phoneNumber);
+        super(name, birthday, email, phoneNumber);
         this.adminId = adminId;
 
     }
 
+    public int getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(int adminId) {
+        this.adminId = adminId;
+    }
+
+
+
+}
+
+// String out Customer
+
+    @Override
+    public String toString(){
+        String ut = "Name: " + name + "\n" +
+                    "Birthday: " + birthday + "\n" +
+                    "Email: " + email + "\n" +
+                    "Phone Number " + phoneNumber + "\n" +
+                    "Customer ID: " + customerId;
 }
 
 
+
+// String out Customer
+
+    @Override
+    public String toString(){
+        String ut = "Name: " + name + "\n" +
+                    "Birthday: " + birthday + "\n" +
+                    "Email: " + email + "\n" +
+                    "Phone Number " + phoneNumber + "\n" +
+                    "Admin ID: " + adminId;
+    }
 
