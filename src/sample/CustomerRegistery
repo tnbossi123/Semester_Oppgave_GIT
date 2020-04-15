@@ -1,0 +1,17 @@
+package sample;
+
+public class CustomerRegistery{
+
+private ArrayList<Customer> customerArrayList = new ArrayList<>();
+
+public void CustomerRegistery(String lblName, Dato lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
+
+
+
+
+
+}
+
+
+
+}
