@@ -4,14 +4,25 @@ public class CustomerRegistery{
 
 private ArrayList<Customer> customerArrayList = new ArrayList<>();
 
-public void CustomerRegistery(String lblName, Dato lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
+public void CustomerRegistery(String lblName, lblAdress, lblCity, lblZip, Dato lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
 
+// Create a new Customer
+    Cusomer newCustomer = new Customer(lblName,lblAdress, lblCity, lblZip, lblBirthday, lblPhoneNumber, lblEmail);
 
+    // Put in a array
+    customerArrayList.add(newCustomer);
 
-
+}
 
 }
 
+//Array gets made to a String
+public String customerList(){
+    String out = "";
+    for (Customer newCustomer : customerArrayList){
+        out += newCustomer;
+    }
 
-
+    return out;
 }
+
