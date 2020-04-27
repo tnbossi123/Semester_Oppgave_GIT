@@ -1,13 +1,15 @@
-package sample;
+package src.sample;
+
+import java.util.ArrayList;
 
 public class CustomerRegistery{
 
 private ArrayList<Customer> customerArrayList = new ArrayList<>();
 
-public void CustomerRegistery(String lblName, lblAdress, lblCity, lblZip, Dato lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
+public void CustomerRegistery(String lblName, String lblAdress, String lblCity, String lblZip, String lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
 
 // Create a new Customer
-    Cusomer newCustomer = new Customer(lblName,lblAdress, lblCity, lblZip, lblBirthday, lblPhoneNumber, lblEmail);
+    Customer newCustomer = new Customer(lblName,lblAdress, lblCity, lblZip, lblBirthday, lblPhoneNumber, lblEmail);
 
     // Put in a array
     customerArrayList.add(newCustomer);
@@ -24,5 +26,5 @@ public String customerList(){
     }
 
     return out;
-}
+}}
 
