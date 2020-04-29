@@ -34,6 +34,7 @@ public class Person {
         return city;
     }
 
+
     public String getZip() {
         return zip;
     }
@@ -48,10 +49,10 @@ public class Person {
 
     public String getPhoneNumber() {
         return phoneNumber;
+
     }
 
 }
-
 
 class Customer extends Person{
 
