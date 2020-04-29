@@ -6,10 +6,10 @@ public class CustomerRegistery{
 
 private ArrayList<Customer> customerArrayList = new ArrayList<>();
 
-public void CustomerRegistery(String lblName, String lblAdress, String lblCity, String lblZip, String lblBirthday, String lblEmail, String lblPhoneNumber, int CustomerId){
+public void CustomerRegistery(String lblName, String lblAdress, String lblCity, String lblZip, String lblBirthday, String lblEmail, String lblPhoneNumber, int lblCustomerId){
 
 // Create a new Customer
-    Customer newCustomer = new Customer(lblName,lblAdress, lblCity, lblZip, lblBirthday, lblPhoneNumber, lblEmail);
+    Customer newCustomer = new Customer(lblName,lblAdress, lblCity, lblZip, lblBirthday, lblEmail, lblPhoneNumber, lblCustomerId);
 
     // Put in a array
     customerArrayList.add(newCustomer);

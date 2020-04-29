@@ -19,9 +19,15 @@ public class ParseCustomer {
         String birthday = strings[4];
         String email = strings[5];
         String phoneNumber = strings[6];
-        /*String customerId = strings[7];*/
+        int customerId;
+
+        try {
+            customerId = Integer.parseInt(strings[7]);
+        } catch (NumberFormatException e) {
+            throw new InvalidCustomerFormatException("Invalid id");
+        }
 
 
-        return new Customer(name, adress, city, zip, birthday, email, phoneNumber);
-
+        return new Customer(name, adress, city, zip, birthday, email, phoneNumber, customerId);
+    }
 }

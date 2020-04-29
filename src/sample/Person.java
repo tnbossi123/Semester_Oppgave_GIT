@@ -57,9 +57,9 @@ class Customer extends Person{
 
     int customerId;
 
-    public Customer(String name, String adress, String city, String zip, String birthday, String email, String phoneNumber, int adminId) {
+    public Customer(String name, String adress, String city, String zip, String birthday, String email, String phoneNumber, int customerId) {
         super(name, adress, city, zip, birthday, email, phoneNumber);
-        this.customerId = adminId;
+        this.customerId = customerId;
     }
 
     public int getCustomerId() {
@@ -81,3 +81,5 @@ class Admin extends Person{
         return adminId;
     }
 }
+
+// Needs a toString()
