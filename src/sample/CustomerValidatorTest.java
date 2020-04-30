@@ -1,11 +1,9 @@
-package src.sample;
+package sample;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static src.sample.CustomerValidator.emailValidator;
-import static src.sample.CustomerValidator.nameValidator;
-import static src.sample.CustomerValidator.numberValidator;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static src.sample.CustomerValidator.*;
 
 
 class PersonValidatorTest {
@@ -88,15 +86,15 @@ class PersonValidatorTest {
     @Test
     public void testInvalidNumber(){
 
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator(""));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator(" "));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("abc"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("-231"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("123-norway"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("1-541-æøå-3010"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("1-541-abc-3010"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("!%&/"));
-        assertThrows(IllegalArgumentException.class, () -> CustomerValidator.numberValidator("123 123     123 12"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator(""));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator(" "));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("abc"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("-231"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("123-norway"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("1-541-æøå-3010"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("1-541-abc-3010"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("!%&/"));
+        assertThrows(IllegalArgumentException.class, () -> src.sample.CustomerValidator.numberValidator("123 123     123 12"));
 
     }
 
